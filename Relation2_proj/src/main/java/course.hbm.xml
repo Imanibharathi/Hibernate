@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.JoyLife.Relation2_proj.Course" table = "COURSE">
+      
+      <id name = "cid" column = "COURSEID"/>
+      <property name = "cname" column = "COURSENAME"/>
+      <set name="students" cascade="all" table="students_courses">
+      <key column="course_id"/>
+      <many-to-many class="com.JoyLife.Relation2_proj.Student" column="student_id"></many-to-many>
+      </set>
+      
+   </class>
+</hibernate-mapping>
+

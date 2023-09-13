@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FirstLevel_LocalCache_SecondLevel_GlobalCache/src/main/java/hibernate.hbm.xml&apos; to &apos;product.hbm.xml&apos;" description="Rename resource &apos;hibernate.hbm.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/hibernate.hbm.xml" name="product.hbm.xml" stamp="1660064045833" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Relation_proj_Annotations&apos; to &apos;One_to_many_Annotations&apos;" description="Rename resource &apos;Relation_proj_Annotations&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Relation_proj_Annotations" name="One_to_many_Annotations" stamp="1659718678641" updateReferences="true"/>
+</session>

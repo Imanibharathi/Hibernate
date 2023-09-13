@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.JoyLife.Relation2_proj.License" table = "License">
+      
+      <id name = "LicenseId" column = "LicenseID">
+      <generator class="foreign">
+      <param name="property">person</param>
+      </generator>
+      </id>
+      <property name = "Issuedate" column = "Issuedate"/>
+      <property name = "Expiredate" column = "Expiredate"/>
+      <one-to-one name="person" class="com.JoyLife.Relation2_proj.Person" cascade="all"></one-to-one>
+   </class>
+</hibernate-mapping>

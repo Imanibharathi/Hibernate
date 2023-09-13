@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.goEdu.myfirstproj.Lecturer1" table = "LECTURER1">
+      
+      <id name = "lid" column = "LECTURERID"/>
+      <property name = "lname" column = "LECTURERNAME"/>
+      <set name="students" cascade="all" lazy="false">
+      <key column ="lid"></key>
+      <one-to-many class="com.goEdu.myfirstproj.Student"/>
+      </set>
+   </class>
+</hibernate-mapping>

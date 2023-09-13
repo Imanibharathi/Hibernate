@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.goEdu.myfirstproj.Vendor" table = "VENDOR">
+      
+      <id name = "vendorId" column = "VENDORID"/>
+      <property name = "vendorname" column = "VENDORNAME"/>
+      <set name="customers" cascade="all" lazy="false">
+      <key column ="VENDORID"></key>
+      <one-to-many class="com.goEdu.myfirstproj.Customer"/>
+      </set>
+   </class>
+</hibernate-mapping>
+

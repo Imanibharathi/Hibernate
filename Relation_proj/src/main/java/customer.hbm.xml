@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.GoPro.Relation_proj.Customer" table = "CUSTOMER">
+      
+      <id name = "customerId" column = "CUSTOMERID"/>
+      <property name = "customerName" column = "CUSTOMERNAME"/>
+      <property name = "customerAddress" column = "CUSTOMERADDRESS"/>
+      
+      <many-to-one class="com.GoPro.Relation_proj.Vendor" name="vendor" column="VENDORID" cascade="all" lazy="false"/>
+   </class>
+</hibernate-mapping>
+
